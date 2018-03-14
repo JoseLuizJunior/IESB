@@ -2,7 +2,7 @@
 //  Aula06Tests.swift
 //  Aula06Tests
 //
-//  Created by HC2MAC017 on 14/03/18.
+//  Created by Junior on 14/03/18.
 //  Copyright © 2018 JJC. All rights reserved.
 //
 

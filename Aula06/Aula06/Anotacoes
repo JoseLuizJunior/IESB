@@ -1,0 +1,4 @@
+administrador
+ad_digital
+
+Delegate SplitViewController - Se não implementar ele vai se comportar de forma estranha e exibe a tela errada

@@ -14,6 +14,8 @@
 		77B6FD1E2059D7C200D49A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77B6FD1C2059D7C200D49A3D /* LaunchScreen.storyboard */; };
 		77B6FD292059D7C200D49A3D /* Aula06Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B6FD282059D7C200D49A3D /* Aula06Tests.swift */; };
 		77B6FD342059D7C200D49A3D /* Aula06UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B6FD332059D7C200D49A3D /* Aula06UITests.swift */; };
+		77B6FD422059DA2800D49A3D /* Anotacoes in Resources */ = {isa = PBXBuildFile; fileRef = 77B6FD412059DA2800D49A3D /* Anotacoes */; };
+		77B6FD442059DD1800D49A3D /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B6FD432059DD1800D49A3D /* MasterTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		77B6FD2F2059D7C200D49A3D /* Aula06UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Aula06UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77B6FD332059D7C200D49A3D /* Aula06UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aula06UITests.swift; sourceTree = "<group>"; };
 		77B6FD352059D7C200D49A3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77B6FD412059DA2800D49A3D /* Anotacoes */ = {isa = PBXFileReference; lastKnownFileType = text; path = Anotacoes; sourceTree = "<group>"; };
+		77B6FD432059DD1800D49A3D /* MasterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				77B6FD1A2059D7C200D49A3D /* Assets.xcassets */,
 				77B6FD1C2059D7C200D49A3D /* LaunchScreen.storyboard */,
 				77B6FD1F2059D7C200D49A3D /* Info.plist */,
+				77B6FD412059DA2800D49A3D /* Anotacoes */,
+				77B6FD432059DD1800D49A3D /* MasterTableViewController.swift */,
 			);
 			path = Aula06;
 			sourceTree = "<group>";
@@ -234,6 +240,7 @@
 			files = (
 				77B6FD1E2059D7C200D49A3D /* LaunchScreen.storyboard in Resources */,
 				77B6FD1B2059D7C200D49A3D /* Assets.xcassets in Resources */,
+				77B6FD422059DA2800D49A3D /* Anotacoes in Resources */,
 				77B6FD192059D7C200D49A3D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77B6FD162059D7C200D49A3D /* ViewController.swift in Sources */,
+				77B6FD442059DD1800D49A3D /* MasterTableViewController.swift in Sources */,
 				77B6FD142059D7C200D49A3D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
