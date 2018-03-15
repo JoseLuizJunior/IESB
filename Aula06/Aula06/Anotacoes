@@ -2,3 +2,19 @@ administrador
 ad_digital
 
 Delegate SplitViewController - Se não implementar ele vai se comportar de forma estranha e exibe a tela errada
+
+segue - executa antes do carregamento da View
+
+Ciclo de vida da UIViewController
+    comeca - criação do objeto.
+    preparacao para segue.
+    preenchimento dos outlets.
+        viewDidLoad - exibido depois que as views são carregadas - executado apenas uma vez
+        sempre executar o super.viewDidLoad() ao sobrescrever um método do ciclo de vida.
+        Ainda não tem o posicionamento dos elementos CGReactPoint vem zerado.
+        viewWillAppear - Imediatamente antes da view aparecer na tela. - já possui geometria - similar ao onStart()
+        viewDidAppear() - Imediatamente após ir para a tela.
+        viewWillDisappear() - Imediatamente antes de a tela desaparecer.
+        viewDidDisappear() - Imediatamente depois de a tela desaparecer.
+        didReceiveMemoryWarning() - executado quando consumo de memória está muito alto.  3 chances antes de fechar o aplicativo
+    
