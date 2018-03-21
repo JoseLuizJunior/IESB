@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Aula06-2
+//  Aula-01-IOS-2
 //
-//  Created by HC2MAC017 on 14/03/18.
+//  Created by HC2MAC017 on 21/03/18.
 //  Copyright © 2018 JJC. All rights reserved.
 //
 
@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about  to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
+        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
     }
 
