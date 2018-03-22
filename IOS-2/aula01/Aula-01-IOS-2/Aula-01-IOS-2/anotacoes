@@ -1,0 +1,17 @@
+Fila Serial - executado uma coisa de cada vez
+    Sequencia de resposta é previsível
+    let mainQueue = DispatchQueue.main - retorna alterações para main queue
+Fila Concorrente - Executa varias tarefas ao mesmo tempo.
+    Sequencia de resposta imprevisível
+    let backgroundQueue = DispatchQueue.global(qos: DispatchQoS)
+    DispatchQoS.userInteractive //alta prioridade
+    DispatchQoS.userInitiated  //alta prioridade
+    DispatchQoS.background
+    DispatchQoS.utility
+Fila Principal - main queue - fila especial do IOS onde sao executado as funcoes principais do aplicativo - Tudo que é de interface.
+
+Ler sobre GCD (Grand Central Dispatch)
+
+OperationQueue e Operation - Outras formas de criar Thead
+
+
