@@ -15,10 +15,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
     let enderecoDaImagem = "https://usercontent2.hubstatic.com/7881737.jpg"
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        indicator.startAnimating()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         
         //        baixarImagem(doEndereco: enderecoDaImagem)
         
-        indicator.startAnimating()
+        
         let concurrentQueue = DispatchQueue(label: "novaThread", attributes: .concurrent)
         concurrentQueue.async(execute: baixarImagemClosure)
         
@@ -81,6 +81,7 @@ class ViewController: UIViewController {
                     }
                 }catch{
                     debugPrint(error)
+                    DispatchQueue.main.async(execute: self.indicator.stopAnimating)
                 }
             }
         }

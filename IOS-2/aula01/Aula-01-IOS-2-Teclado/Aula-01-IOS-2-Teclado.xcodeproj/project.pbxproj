@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77B61950206334D5005C746A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B6194F206334D5005C746A /* AppDelegate.swift */; };
+		77B61952206334D5005C746A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B61951206334D5005C746A /* ViewController.swift */; };
+		77B61955206334D5005C746A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77B61953206334D5005C746A /* Main.storyboard */; };
+		77B61957206334D5005C746A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77B61956206334D5005C746A /* Assets.xcassets */; };
+		77B6195A206334D5005C746A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77B61958206334D5005C746A /* LaunchScreen.storyboard */; };
+		77B61965206334D5005C746A /* Aula_01_IOS_2_TecladoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B61964206334D5005C746A /* Aula_01_IOS_2_TecladoTests.swift */; };
+		77B61970206334D5005C746A /* Aula_01_IOS_2_TecladoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B6196F206334D5005C746A /* Aula_01_IOS_2_TecladoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77B61961206334D5005C746A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77B61944206334D5005C746A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77B6194B206334D5005C746A;
+			remoteInfo = "Aula-01-IOS-2-Teclado";
+		};
+		77B6196C206334D5005C746A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77B61944206334D5005C746A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77B6194B206334D5005C746A;
+			remoteInfo = "Aula-01-IOS-2-Teclado";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		77B6194C206334D5005C746A /* Aula-01-IOS-2-Teclado.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aula-01-IOS-2-Teclado.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77B6194F206334D5005C746A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		77B61951206334D5005C746A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		77B61954206334D5005C746A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		77B61956206334D5005C746A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77B61959206334D5005C746A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		77B6195B206334D5005C746A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77B61960206334D5005C746A /* Aula-01-IOS-2-TecladoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Aula-01-IOS-2-TecladoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77B61964206334D5005C746A /* Aula_01_IOS_2_TecladoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aula_01_IOS_2_TecladoTests.swift; sourceTree = "<group>"; };
+		77B61966206334D5005C746A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77B6196B206334D5005C746A /* Aula-01-IOS-2-TecladoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Aula-01-IOS-2-TecladoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77B6196F206334D5005C746A /* Aula_01_IOS_2_TecladoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aula_01_IOS_2_TecladoUITests.swift; sourceTree = "<group>"; };
+		77B61971206334D5005C746A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77B61949206334D5005C746A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77B6195D206334D5005C746A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77B61968206334D5005C746A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77B61943206334D5005C746A = {
+			isa = PBXGroup;
+			children = (
+				77B6194E206334D5005C746A /* Aula-01-IOS-2-Teclado */,
+				77B61963206334D5005C746A /* Aula-01-IOS-2-TecladoTests */,
+				77B6196E206334D5005C746A /* Aula-01-IOS-2-TecladoUITests */,
+				77B6194D206334D5005C746A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		77B6194D206334D5005C746A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77B6194C206334D5005C746A /* Aula-01-IOS-2-Teclado.app */,
+				77B61960206334D5005C746A /* Aula-01-IOS-2-TecladoTests.xctest */,
+				77B6196B206334D5005C746A /* Aula-01-IOS-2-TecladoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77B6194E206334D5005C746A /* Aula-01-IOS-2-Teclado */ = {
+			isa = PBXGroup;
+			children = (
+				77B6194F206334D5005C746A /* AppDelegate.swift */,
+				77B61951206334D5005C746A /* ViewController.swift */,
+				77B61953206334D5005C746A /* Main.storyboard */,
+				77B61956206334D5005C746A /* Assets.xcassets */,
+				77B61958206334D5005C746A /* LaunchScreen.storyboard */,
+				77B6195B206334D5005C746A /* Info.plist */,
+			);
+			path = "Aula-01-IOS-2-Teclado";
+			sourceTree = "<group>";
+		};
+		77B61963206334D5005C746A /* Aula-01-IOS-2-TecladoTests */ = {
+			isa = PBXGroup;
+			children = (
+				77B61964206334D5005C746A /* Aula_01_IOS_2_TecladoTests.swift */,
+				77B61966206334D5005C746A /* Info.plist */,
+			);
+			path = "Aula-01-IOS-2-TecladoTests";
+			sourceTree = "<group>";
+		};
+		77B6196E206334D5005C746A /* Aula-01-IOS-2-TecladoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				77B6196F206334D5005C746A /* Aula_01_IOS_2_TecladoUITests.swift */,
+				77B61971206334D5005C746A /* Info.plist */,
+			);
+			path = "Aula-01-IOS-2-TecladoUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77B6194B206334D5005C746A /* Aula-01-IOS-2-Teclado */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77B61974206334D5005C746A /* Build configuration list for PBXNativeTarget "Aula-01-IOS-2-Teclado" */;
+			buildPhases = (
+				77B61948206334D5005C746A /* Sources */,
+				77B61949206334D5005C746A /* Frameworks */,
+				77B6194A206334D5005C746A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Aula-01-IOS-2-Teclado";
+			productName = "Aula-01-IOS-2-Teclado";
+			productReference = 77B6194C206334D5005C746A /* Aula-01-IOS-2-Teclado.app */;
+			productType = "com.apple.product-type.application";
+		};
+		77B6195F206334D5005C746A /* Aula-01-IOS-2-TecladoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77B61977206334D5005C746A /* Build configuration list for PBXNativeTarget "Aula-01-IOS-2-TecladoTests" */;
+			buildPhases = (
+				77B6195C206334D5005C746A /* Sources */,
+				77B6195D206334D5005C746A /* Frameworks */,
+				77B6195E206334D5005C746A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77B61962206334D5005C746A /* PBXTargetDependency */,
+			);
+			name = "Aula-01-IOS-2-TecladoTests";
+			productName = "Aula-01-IOS-2-TecladoTests";
+			productReference = 77B61960206334D5005C746A /* Aula-01-IOS-2-TecladoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		77B6196A206334D5005C746A /* Aula-01-IOS-2-TecladoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77B6197A206334D5005C746A /* Build configuration list for PBXNativeTarget "Aula-01-IOS-2-TecladoUITests" */;
+			buildPhases = (
+				77B61967206334D5005C746A /* Sources */,
+				77B61968206334D5005C746A /* Frameworks */,
+				77B61969206334D5005C746A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77B6196D206334D5005C746A /* PBXTargetDependency */,
+			);
+			name = "Aula-01-IOS-2-TecladoUITests";
+			productName = "Aula-01-IOS-2-TecladoUITests";
+			productReference = 77B6196B206334D5005C746A /* Aula-01-IOS-2-TecladoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77B61944206334D5005C746A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = JJC;
+				TargetAttributes = {
+					77B6194B206334D5005C746A = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					77B6195F206334D5005C746A = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 77B6194B206334D5005C746A;
+					};
+					77B6196A206334D5005C746A = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 77B6194B206334D5005C746A;
+					};
+				};
+			};
+			buildConfigurationList = 77B61947206334D5005C746A /* Build configuration list for PBXProject "Aula-01-IOS-2-Teclado" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77B61943206334D5005C746A;
+			productRefGroup = 77B6194D206334D5005C746A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77B6194B206334D5005C746A /* Aula-01-IOS-2-Teclado */,
+				77B6195F206334D5005C746A /* Aula-01-IOS-2-TecladoTests */,
+				77B6196A206334D5005C746A /* Aula-01-IOS-2-TecladoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77B6194A206334D5005C746A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77B6195A206334D5005C746A /* LaunchScreen.storyboard in Resources */,
+				77B61957206334D5005C746A /* Assets.xcassets in Resources */,
+				77B61955206334D5005C746A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77B6195E206334D5005C746A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77B61969206334D5005C746A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77B61948206334D5005C746A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77B61952206334D5005C746A /* ViewController.swift in Sources */,
+				77B61950206334D5005C746A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77B6195C206334D5005C746A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77B61965206334D5005C746A /* Aula_01_IOS_2_TecladoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77B61967206334D5005C746A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77B61970206334D5005C746A /* Aula_01_IOS_2_TecladoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77B61962206334D5005C746A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77B6194B206334D5005C746A /* Aula-01-IOS-2-Teclado */;
+			targetProxy = 77B61961206334D5005C746A /* PBXContainerItemProxy */;
+		};
+		77B6196D206334D5005C746A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77B6194B206334D5005C746A /* Aula-01-IOS-2-Teclado */;
+			targetProxy = 77B6196C206334D5005C746A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		77B61953206334D5005C746A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77B61954206334D5005C746A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		77B61958206334D5005C746A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77B61959206334D5005C746A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		77B61972206334D5005C746A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		77B61973206334D5005C746A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77B61975206334D5005C746A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Aula-01-IOS-2-Teclado/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Junior.Aula-01-IOS-2-Teclado";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77B61976206334D5005C746A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Aula-01-IOS-2-Teclado/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Junior.Aula-01-IOS-2-Teclado";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		77B61978206334D5005C746A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Aula-01-IOS-2-TecladoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Junior.Aula-01-IOS-2-TecladoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aula-01-IOS-2-Teclado.app/Aula-01-IOS-2-Teclado";
+			};
+			name = Debug;
+		};
+		77B61979206334D5005C746A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Aula-01-IOS-2-TecladoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Junior.Aula-01-IOS-2-TecladoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aula-01-IOS-2-Teclado.app/Aula-01-IOS-2-Teclado";
+			};
+			name = Release;
+		};
+		77B6197B206334D5005C746A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Aula-01-IOS-2-TecladoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Junior.Aula-01-IOS-2-TecladoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Aula-01-IOS-2-Teclado";
+			};
+			name = Debug;
+		};
+		77B6197C206334D5005C746A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Aula-01-IOS-2-TecladoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Junior.Aula-01-IOS-2-TecladoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Aula-01-IOS-2-Teclado";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77B61947206334D5005C746A /* Build configuration list for PBXProject "Aula-01-IOS-2-Teclado" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77B61972206334D5005C746A /* Debug */,
+				77B61973206334D5005C746A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77B61974206334D5005C746A /* Build configuration list for PBXNativeTarget "Aula-01-IOS-2-Teclado" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77B61975206334D5005C746A /* Debug */,
+				77B61976206334D5005C746A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77B61977206334D5005C746A /* Build configuration list for PBXNativeTarget "Aula-01-IOS-2-TecladoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77B61978206334D5005C746A /* Debug */,
+				77B61979206334D5005C746A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77B6197A206334D5005C746A /* Build configuration list for PBXNativeTarget "Aula-01-IOS-2-TecladoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77B6197B206334D5005C746A /* Debug */,
+				77B6197C206334D5005C746A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77B61944206334D5005C746A /* Project object */;
+}

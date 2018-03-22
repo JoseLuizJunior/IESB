@@ -15,3 +15,5 @@ Ler sobre GCD (Grand Central Dispatch)
 OperationQueue e Operation - Outras formas de criar Thead
 
 
+becomeFirstResponder - focus
+resignFirstResponder - retirar focus
