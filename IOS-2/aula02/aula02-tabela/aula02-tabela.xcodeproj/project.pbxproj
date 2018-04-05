@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77228A48206C633A001989FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77228A47206C633A001989FC /* AppDelegate.swift */; };
+		77228A4A206C633A001989FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77228A49206C633A001989FC /* ViewController.swift */; };
+		77228A4D206C633A001989FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77228A4B206C633A001989FC /* Main.storyboard */; };
+		77228A4F206C633A001989FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77228A4E206C633A001989FC /* Assets.xcassets */; };
+		77228A52206C633A001989FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77228A50206C633A001989FC /* LaunchScreen.storyboard */; };
+		77228A5D206C633A001989FC /* aula02_tabelaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77228A5C206C633A001989FC /* aula02_tabelaTests.swift */; };
+		77228A68206C633A001989FC /* aula02_tabelaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77228A67206C633A001989FC /* aula02_tabelaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77228A59206C633A001989FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77228A3C206C633A001989FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77228A43206C633A001989FC;
+			remoteInfo = "aula02-tabela";
+		};
+		77228A64206C633A001989FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77228A3C206C633A001989FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77228A43206C633A001989FC;
+			remoteInfo = "aula02-tabela";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		77228A44206C633A001989FC /* aula02-tabela.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aula02-tabela.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77228A47206C633A001989FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		77228A49206C633A001989FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		77228A4C206C633A001989FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		77228A4E206C633A001989FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77228A51206C633A001989FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		77228A53206C633A001989FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77228A58206C633A001989FC /* aula02-tabelaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aula02-tabelaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77228A5C206C633A001989FC /* aula02_tabelaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aula02_tabelaTests.swift; sourceTree = "<group>"; };
+		77228A5E206C633A001989FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77228A63206C633A001989FC /* aula02-tabelaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aula02-tabelaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77228A67206C633A001989FC /* aula02_tabelaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aula02_tabelaUITests.swift; sourceTree = "<group>"; };
+		77228A69206C633A001989FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77228A41206C633A001989FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77228A55206C633A001989FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77228A60206C633A001989FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77228A3B206C633A001989FC = {
+			isa = PBXGroup;
+			children = (
+				77228A46206C633A001989FC /* aula02-tabela */,
+				77228A5B206C633A001989FC /* aula02-tabelaTests */,
+				77228A66206C633A001989FC /* aula02-tabelaUITests */,
+				77228A45206C633A001989FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		77228A45206C633A001989FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77228A44206C633A001989FC /* aula02-tabela.app */,
+				77228A58206C633A001989FC /* aula02-tabelaTests.xctest */,
+				77228A63206C633A001989FC /* aula02-tabelaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77228A46206C633A001989FC /* aula02-tabela */ = {
+			isa = PBXGroup;
+			children = (
+				77228A47206C633A001989FC /* AppDelegate.swift */,
+				77228A49206C633A001989FC /* ViewController.swift */,
+				77228A4B206C633A001989FC /* Main.storyboard */,
+				77228A4E206C633A001989FC /* Assets.xcassets */,
+				77228A50206C633A001989FC /* LaunchScreen.storyboard */,
+				77228A53206C633A001989FC /* Info.plist */,
+			);
+			path = "aula02-tabela";
+			sourceTree = "<group>";
+		};
+		77228A5B206C633A001989FC /* aula02-tabelaTests */ = {
+			isa = PBXGroup;
+			children = (
+				77228A5C206C633A001989FC /* aula02_tabelaTests.swift */,
+				77228A5E206C633A001989FC /* Info.plist */,
+			);
+			path = "aula02-tabelaTests";
+			sourceTree = "<group>";
+		};
+		77228A66206C633A001989FC /* aula02-tabelaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				77228A67206C633A001989FC /* aula02_tabelaUITests.swift */,
+				77228A69206C633A001989FC /* Info.plist */,
+			);
+			path = "aula02-tabelaUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77228A43206C633A001989FC /* aula02-tabela */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77228A6C206C633A001989FC /* Build configuration list for PBXNativeTarget "aula02-tabela" */;
+			buildPhases = (
+				77228A40206C633A001989FC /* Sources */,
+				77228A41206C633A001989FC /* Frameworks */,
+				77228A42206C633A001989FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "aula02-tabela";
+			productName = "aula02-tabela";
+			productReference = 77228A44206C633A001989FC /* aula02-tabela.app */;
+			productType = "com.apple.product-type.application";
+		};
+		77228A57206C633A001989FC /* aula02-tabelaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77228A6F206C633A001989FC /* Build configuration list for PBXNativeTarget "aula02-tabelaTests" */;
+			buildPhases = (
+				77228A54206C633A001989FC /* Sources */,
+				77228A55206C633A001989FC /* Frameworks */,
+				77228A56206C633A001989FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77228A5A206C633A001989FC /* PBXTargetDependency */,
+			);
+			name = "aula02-tabelaTests";
+			productName = "aula02-tabelaTests";
+			productReference = 77228A58206C633A001989FC /* aula02-tabelaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		77228A62206C633A001989FC /* aula02-tabelaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77228A72206C633A001989FC /* Build configuration list for PBXNativeTarget "aula02-tabelaUITests" */;
+			buildPhases = (
+				77228A5F206C633A001989FC /* Sources */,
+				77228A60206C633A001989FC /* Frameworks */,
+				77228A61206C633A001989FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77228A65206C633A001989FC /* PBXTargetDependency */,
+			);
+			name = "aula02-tabelaUITests";
+			productName = "aula02-tabelaUITests";
+			productReference = 77228A63206C633A001989FC /* aula02-tabelaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77228A3C206C633A001989FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = JJC;
+				TargetAttributes = {
+					77228A43206C633A001989FC = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					77228A57206C633A001989FC = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 77228A43206C633A001989FC;
+					};
+					77228A62206C633A001989FC = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 77228A43206C633A001989FC;
+					};
+				};
+			};
+			buildConfigurationList = 77228A3F206C633A001989FC /* Build configuration list for PBXProject "aula02-tabela" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77228A3B206C633A001989FC;
+			productRefGroup = 77228A45206C633A001989FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77228A43206C633A001989FC /* aula02-tabela */,
+				77228A57206C633A001989FC /* aula02-tabelaTests */,
+				77228A62206C633A001989FC /* aula02-tabelaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77228A42206C633A001989FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77228A52206C633A001989FC /* LaunchScreen.storyboard in Resources */,
+				77228A4F206C633A001989FC /* Assets.xcassets in Resources */,
+				77228A4D206C633A001989FC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77228A56206C633A001989FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77228A61206C633A001989FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77228A40206C633A001989FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77228A4A206C633A001989FC /* ViewController.swift in Sources */,
+				77228A48206C633A001989FC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77228A54206C633A001989FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77228A5D206C633A001989FC /* aula02_tabelaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77228A5F206C633A001989FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77228A68206C633A001989FC /* aula02_tabelaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77228A5A206C633A001989FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77228A43206C633A001989FC /* aula02-tabela */;
+			targetProxy = 77228A59206C633A001989FC /* PBXContainerItemProxy */;
+		};
+		77228A65206C633A001989FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77228A43206C633A001989FC /* aula02-tabela */;
+			targetProxy = 77228A64206C633A001989FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		77228A4B206C633A001989FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77228A4C206C633A001989FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		77228A50206C633A001989FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77228A51206C633A001989FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		77228A6A206C633A001989FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		77228A6B206C633A001989FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77228A6D206C633A001989FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "aula02-tabela/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Junior.aula02-tabela";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77228A6E206C633A001989FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "aula02-tabela/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Junior.aula02-tabela";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		77228A70206C633A001989FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "aula02-tabelaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Junior.aula02-tabelaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/aula02-tabela.app/aula02-tabela";
+			};
+			name = Debug;
+		};
+		77228A71206C633A001989FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "aula02-tabelaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Junior.aula02-tabelaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/aula02-tabela.app/aula02-tabela";
+			};
+			name = Release;
+		};
+		77228A73206C633A001989FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "aula02-tabelaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Junior.aula02-tabelaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "aula02-tabela";
+			};
+			name = Debug;
+		};
+		77228A74206C633A001989FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "aula02-tabelaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Junior.aula02-tabelaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "aula02-tabela";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77228A3F206C633A001989FC /* Build configuration list for PBXProject "aula02-tabela" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77228A6A206C633A001989FC /* Debug */,
+				77228A6B206C633A001989FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77228A6C206C633A001989FC /* Build configuration list for PBXNativeTarget "aula02-tabela" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77228A6D206C633A001989FC /* Debug */,
+				77228A6E206C633A001989FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77228A6F206C633A001989FC /* Build configuration list for PBXNativeTarget "aula02-tabelaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77228A70206C633A001989FC /* Debug */,
+				77228A71206C633A001989FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77228A72206C633A001989FC /* Build configuration list for PBXNativeTarget "aula02-tabelaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77228A73206C633A001989FC /* Debug */,
+				77228A74206C633A001989FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77228A3C206C633A001989FC /* Project object */;
+}
