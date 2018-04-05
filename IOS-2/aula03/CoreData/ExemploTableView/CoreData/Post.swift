@@ -11,8 +11,12 @@ import CoreData
 class Post: NSManagedObject {
     
     static func insertOrUpdate(_ post: CodablePost, intContext context: NSManagedObjectContext) -> Post{
-        
-        return nil
+        let postContext = Post(context: context)
+        postContext.title = post.title
+        postContext.body = post.body
+        postContext.id = post.id
+
+        return postContext
     }
     
 

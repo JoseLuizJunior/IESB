@@ -40,6 +40,13 @@ class PostTableViewController: UITableViewController {
             self.posts = posts
             
             AppDelegate.persistentContainer.performBackgroundTask(){ context in
+                for post in posts {
+                    if let post =
+                    Post.insertOrUpdate(<#T##post: CodablePost##CodablePost#>, intContext: <#T##NSManagedObjectContext#>)
+
+                }
+                
+                
                 
             }
         }

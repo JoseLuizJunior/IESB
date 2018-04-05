@@ -82,8 +82,8 @@
 		EBC7A59F206C5E51007D5DD2 /* ExemploTableView */ = {
 			isa = PBXGroup;
 			children = (
-				770B38412075AD9300F82DD1 /* CoreData */,
 				EBC7A5A0206C5E51007D5DD2 /* AppDelegate.swift */,
+				770B38412075AD9300F82DD1 /* CoreData */,
 				EBC7A5B2206C5EC5007D5DD2 /* Model */,
 				EBC7A5A4206C5E51007D5DD2 /* Main.storyboard */,
 				EBC7A5B5206C6499007D5DD2 /* PostViewCell.swift */,

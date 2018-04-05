@@ -10,7 +10,7 @@ import Foundation
 
 struct CodablePost: Codable {
     
-    var id: Int
+    var id: Int32
     var userId: Int
     var title: String
     var body: String
