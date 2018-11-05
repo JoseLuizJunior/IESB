@@ -1,0 +1,67 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
+public class GameManager : MonoBehaviour {
+
+    public static GameManager instance;
+
+    public Sprite[] overlaySprites;
+    public Image overlay;
+    public Text timeHud;
+    public Text scoreHud;
+
+    public float time;
+    public int score;
+
+    public enum GameStatus {WIN, LOSE, DIE, PLAY };
+    public GameStatus status;
+
+	private void Awake(){
+        if(instance == null){
+            instance = this;
+        }else{
+            Destroy(gameObject);
+        }
+	}
+
+	// Use this for initialization
+	void Start () {
+        time = 30f;
+        score = 0;
+        status = GameStatus.PLAY;
+        overlay.enabled = false;
+        Physics2D.IgnoreLayerCollision(9, 10, false);
+	}
+	
+	// Update is called once per frame
+	void Update () {
+        if (status == GameStatus.PLAY){
+            time -= Time.deltaTime;
+
+            int timeInt = (int)time;
+            if (timeInt >= 0){
+                timeHud.text = "Time: " + timeInt.ToString();
+                scoreHud.text = "Score:" + score.ToString();
+            }
+        } else if (Input.GetButtonDown("Jump")){
+            if (status == GameStatus.WIN){
+                if(SceneManager.GetActiveScene().buildIndex == 2){
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+                }else{
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); 
+                }
+            } else{
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
+        }
+	}
+
+    public void SetOverlay(GameStatus parStatus){
+        status = parStatus;
+        overlay.enabled = true;
+        overlay.sprite = overlaySprites[(int)parStatus];
+    }
+}
