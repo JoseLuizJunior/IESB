@@ -1,9 +1,6 @@
 package com.androiddesenv.opiniaodetudo.infra.dao
 
-import androidx.room.Dao
-import androidx.room.Delete
-import androidx.room.Insert
-import androidx.room.Query
+import androidx.room.*
 import com.androiddesenv.opiniaodetudo.model.Review
 
 @Dao
@@ -17,4 +14,7 @@ interface ReviewDAO {
 
     @Delete
     fun delete(item: Review)
+
+    @Update
+    fun update(review: Review)
 }

@@ -12,6 +12,8 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.room.util.StringUtil
+import com.androiddesenv.opiniaodetudo.model.Review
 import com.androiddesenv.opiniaodetudo.model.repository.ReviewRepository
 
 class MainActivity : AppCompatActivity() {
@@ -26,6 +28,10 @@ class MainActivity : AppCompatActivity() {
         val textViewName = findViewById<TextView>(R.id.input_nome);
         val textViewReview = findViewById<TextView>(R.id.input_review);
 
+        val reviewToEdit = (intent?.getSerializableExtra("item") as Review?)?.also { review ->
+            textViewName.text = review.name
+            textViewReview.text = review.review
+        }
 
 
         mainContainer.setOnTouchListener { v, event ->
@@ -33,18 +39,29 @@ class MainActivity : AppCompatActivity() {
             imm.hideSoftInputFromWindow(currentFocus!!.windowToken, 0 )
         }
 
-        buttonSave.setOnClickListener{
-            val name = textViewName.text;
-            val review = textViewReview.text;
-
-            object : AsyncTask<Void, Void, Unit>() {
-                override fun doInBackground(vararg params: Void?) {
-                    val repository = ReviewRepository(this@MainActivity.applicationContext)
-                    repository.save(name.toString(), review.toString())
-                    startActivity(Intent(this@MainActivity, ListActivity::class.java))
-                }
-            }.execute()
+        buttonSave.setOnClickListener {
+            val name = textViewName.text
+            val review = textViewReview.text
+            if(name.toString().isEmpty() || name.toString() == null){
+                Toast.makeText(this@MainActivity.applicationContext, "Preencha o campo Nome do produto/filme/coisa!!!", Toast.LENGTH_LONG).show()
+            }else{
+                object: AsyncTask<Void, Void, Unit>() {
+                    override fun doInBackground(vararg params: Void?) {
+                        val repository = ReviewRepository(this@MainActivity.applicationContext)
+                        if(reviewToEdit == null){
+                            repository.save(name.toString().trim(), review.toString().trim())
+                            textViewName.setText("")
+                            textViewReview.setText("")
+                            startActivity(Intent(this@MainActivity, ListActivity::class.java))
+                        }else{
+                            repository.update(reviewToEdit.id, name.toString(), review.toString())
+                            finish()
+                        }
+                    }
+                }.execute()
+            }
         }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
