@@ -14,26 +14,24 @@ import com.androiddesenv.opiniaodetudo.model.repository.ReviewRepository
 
 class ListActivity : AppCompatActivity() {
 
+    private lateinit var reviews : MutableList<Review>
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.list_review_layout)
 
+        this.supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         val listView = findViewById<ListView>(R.id.list_recyclerview)
-        this.supportActionBar?.setDisplayHomeAsUpEnabled(true)
         initList(listView)
-
-        listView.setOnItemLongClickListener { parent, view, position, id ->
-            val popupMenu = PopupMenu(this@ListActivity, view)
-            true
-        }
-
+        configureOnLongClick(listView)
     }
 
     private fun initList(listView: ListView){
         object : AsyncTask<Void, Void, ArrayAdapter<Review>>(){
             override fun doInBackground(vararg params: Void?): ArrayAdapter<Review> {
-                val reviews = ReviewRepository(this@ListActivity.applicationContext).listAll()
+                val repo = ReviewRepository(this@ListActivity.applicationContext)
+                reviews = repo.listAll().toMutableList()
 
                 val adapter = object : ArrayAdapter<Review>(this@ListActivity, -1, reviews ){
                     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
@@ -57,6 +55,36 @@ class ListActivity : AppCompatActivity() {
             }
 
         }.execute()
+    }
+
+    private fun configureOnLongClick(listView: ListView?) {
+        listView?.setOnItemLongClickListener { parent, view, position, id ->
+            val popupMenu = PopupMenu(this@ListActivity, view)
+            popupMenu.inflate(R.menu.list_review_item_menu)
+            popupMenu.setOnMenuItemClickListener {
+                when(it.itemId){
+                    R.id.item_list_delete -> this@ListActivity.delete(reviews[position])
+                }
+                true
+            }
+            popupMenu.show()
+            true
+        }
+    }
+
+    private fun delete(item: Review){
+        object: AsyncTask<Unit, Void, Unit>(){
+            override fun doInBackground(vararg params: Unit?) {
+                ReviewRepository(this@ListActivity.applicationContext).delete(item)
+                reviews.remove(item)
+            }
+            override fun onPostExecute(result: Unit?) {
+                val listView = findViewById<ListView>(R.id.list_recyclerview)
+                val adapter = listView.adapter as ArrayAdapter<Review>
+                adapter.notifyDataSetChanged()
+            }
+        }.execute()
+
     }
 
     override fun onSupportNavigateUp(): Boolean {

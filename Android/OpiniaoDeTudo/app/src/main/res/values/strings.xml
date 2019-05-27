@@ -6,6 +6,6 @@
     <string name="hint_name">Nome do produto/filme/coisa</string>
     <string name="hint_opiniao">Escreva aqui a sua opinião</string>
     <string name="menu_list_reviews_label">Lista Reviews</string>
-    <string name="item_list_edit">Editar</string>
-    <string name="item_list_delete">Editar</string>
+    <string name="item_list_edit">Modificar</string>
+    <string name="item_list_delete">Apagar</string>
 </resources>

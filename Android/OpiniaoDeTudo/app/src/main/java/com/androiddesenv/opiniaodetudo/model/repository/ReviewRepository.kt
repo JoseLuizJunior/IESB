@@ -1,6 +1,7 @@
 package com.androiddesenv.opiniaodetudo.model.repository
 
 import android.content.Context
+import androidx.room.Delete
 import com.androiddesenv.opiniaodetudo.infra.dao.ReviewDAO
 import com.androiddesenv.opiniaodetudo.infra.dao.ReviewDatabase
 import com.androiddesenv.opiniaodetudo.model.Review
@@ -22,19 +23,9 @@ class ReviewRepository{
     fun listAll(): List<Review> {
         return reviewDAO.listAll()
     }
-//    private constructor()
-//
-//    companion object {
-//        val instance : ReviewRepository = ReviewRepository()
-//    }
-//
-//    private val data = mutableListOf<Review>()
-//
-//    fun save(name: String, review: String){
-//        data.add(Review(UUID.randomUUID().toString(), name, review));
-//    }
-//    fun listAll() : List<Review>{
-//        return data.toList();
-//    }
 
+    @Delete
+    fun delete(item: Review) {
+        reviewDAO.delete(item)
+    }
 }
