@@ -1,15 +1,12 @@
 package com.androiddesenv.opiniaodetudo.fragment
 
-import android.content.Context
 import android.content.Intent
 import android.os.AsyncTask
 import android.os.Bundle
 import android.view.*
-import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
 import com.androiddesenv.opiniaodetudo.ListActivity
 import com.androiddesenv.opiniaodetudo.R
