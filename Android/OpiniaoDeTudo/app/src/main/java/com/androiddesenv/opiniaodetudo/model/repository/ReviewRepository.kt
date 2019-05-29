@@ -32,4 +32,8 @@ class ReviewRepository{
     fun update(id: String, name: String, review: String) {
         reviewDAO.update(Review(id, name, review))
     }
+
+    fun update(review:Review) {
+        reviewDAO.update(review)
+    }
 }
