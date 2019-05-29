@@ -110,6 +110,5 @@ class ListFragment : Fragment() {
         intent.putExtra("item", item)
         startActivity(intent)
     }
-
 }
 
