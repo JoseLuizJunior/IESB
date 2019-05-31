@@ -27,6 +27,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ListActivity"/>
+        <activity android:name=".AboutActivity"/>
         <provider
                 android:name="androidx.core.content.FileProvider"
                 android:authorities="com.androiddesenv.opiniaodetudo.fileprovider"

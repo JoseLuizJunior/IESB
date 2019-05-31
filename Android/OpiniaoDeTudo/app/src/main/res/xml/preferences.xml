@@ -9,18 +9,8 @@
             android:title="@string/night_mode"/>
 
     <Preference
-            app:key="feedback"
-            app:title="Send feedback"
-            app:summary="Report technical issues or suggest new features"/>
+            app:key="about"
+            android:title="@string/about"
+            app:summary="@string/summary_about"/>
 
 </androidx.preference.PreferenceScreen>
-
-
-        <!--<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">-->
-
-        <!--<SwitchPreference-->
-        <!--android:defaultValue="false"-->
-        <!--android:key="night_mode_pref"-->
-        <!--android:summary="@string/summary_night_mode"-->
-        <!--android:title="@string/night_mode" />-->
-        <!--</PreferenceScreen>-->

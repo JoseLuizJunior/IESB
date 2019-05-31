@@ -16,16 +16,12 @@ class MainActivity : AppCompatActivity() {
         val FORM_FRAGMENT = "formFragment"
         val LIST_FRAGMENT = "listFragment"
         const val SETTINGS_FRAGMENT = "settings"
-//        const val SETTINGS_FRAGMENT = R.id.menuitem_settings
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         chooseTheme()
         setContentView(R.layout.activity_main)
-//        if(savedInstanceState == null){
-//            navigateTo(FORM_FRAGMENT)
-//        }
         navigateTo(FORM_FRAGMENT)
         configureBottomMenu()
     }

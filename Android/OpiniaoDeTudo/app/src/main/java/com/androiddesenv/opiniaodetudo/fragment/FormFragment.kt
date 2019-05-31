@@ -2,6 +2,7 @@ package com.androiddesenv.opiniaodetudo.fragment
 
 import android.app.Activity
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.media.ThumbnailUtils
@@ -13,9 +14,12 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import androidx.fragment.app.Fragment
 import com.androiddesenv.opiniaodetudo.ListActivity
+import com.androiddesenv.opiniaodetudo.MainActivity
 import com.androiddesenv.opiniaodetudo.R
 import com.androiddesenv.opiniaodetudo.model.Review
 import com.androiddesenv.opiniaodetudo.model.repository.ReviewRepository
@@ -30,6 +34,7 @@ class FormFragment : Fragment() {
     private var thumbnailBytes: ByteArray? = null
     companion object {
         val TAKE_PICTURE_RESULT = 101
+        const val CAMERA_PERMISSION_REQUEST = 2706
     }
     private var file: File? = null
 
@@ -120,13 +125,23 @@ class FormFragment : Fragment() {
 
     private fun configurePhotoClick() {
         mainView.findViewById<ImageView>(R.id.photo).setOnClickListener {
-            val fileName = "${System.nanoTime()}.jpg"
-            file = File(activity!!.filesDir, fileName)
-            val uri = FileProvider.getUriForFile(activity!!,
-                "com.androiddesenv.opiniaodetudo.fileprovider", file!!)
-            val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-            intent.putExtra(MediaStore.EXTRA_OUTPUT, uri)
-            startActivityForResult(intent, TAKE_PICTURE_RESULT)
+
+            if(ContextCompat.checkSelfPermission(activity!!.applicationContext,
+                    android.Manifest.permission.CAMERA)
+                != PackageManager.PERMISSION_GRANTED){
+                ActivityCompat.requestPermissions(
+                    activity!!,
+                    arrayOf(android.Manifest.permission.CAMERA, android.Manifest.permission.RECORD_AUDIO),
+                    CAMERA_PERMISSION_REQUEST )
+            }else{
+                val fileName = "${System.nanoTime()}.jpg"
+                file = File(activity!!.filesDir, fileName)
+                val uri = FileProvider.getUriForFile(activity!!,
+                    "com.androiddesenv.opiniaodetudo.fileprovider", file!!)
+                val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+                intent.putExtra(MediaStore.EXTRA_OUTPUT, uri)
+                startActivityForResult(intent, TAKE_PICTURE_RESULT)
+            }
         }
     }
 }
