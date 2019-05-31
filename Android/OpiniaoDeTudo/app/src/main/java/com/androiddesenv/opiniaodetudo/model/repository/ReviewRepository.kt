@@ -29,7 +29,7 @@ class ReviewRepository{
         reviewDAO.delete(item)
     }
 
-    fun update(id: String, name: String, review: String) {
-        reviewDAO.update(Review(id, name, review))
+    fun update(id: String, name: String, review: String, photoPath: String?, thumbnailBytes: ByteArray?) {
+        reviewDAO.update(Review(id, name, review, photoPath, thumbnailBytes))
     }
 }

@@ -39,16 +39,15 @@ class FormFragment : Fragment() {
         val buttonSave = mainView.findViewById<Button>(R.id.button_save)
         val textViewName = mainView.findViewById<TextView>(R.id.input_nome)
         val textViewReview = mainView.findViewById<TextView>(R.id.input_review)
-        val imageViewPhoto = mainView.findViewById<ImageView>(R.id.thumbnail)
-
-
 
         val reviewToEdit = (activity!!.intent?.getSerializableExtra("item") as Review?)?.also { review ->
             textViewName.text = review.name
             textViewReview.text = review.review
+
             if(review.thumbnail != null){
+                val photo = mainView.findViewById<ImageView>(R.id.photo)
                 val bitmap = BitmapFactory.decodeByteArray(review.thumbnail, 0, review.thumbnail.size)
-                imageViewPhoto.setImageBitmap(bitmap)
+                photo.setImageBitmap(bitmap)
             }
 
         }
@@ -65,13 +64,24 @@ class FormFragment : Fragment() {
                     override fun doInBackground(vararg params: Void?) {
                         val repository = ReviewRepository(activity!!.applicationContext)
                         if(reviewToEdit == null){
-                            repository.save(name.toString(), review.toString(),
-                                file!!.toRelativeString(activity!!.filesDir), thumbnailBytes)
+                            if(file == null){
+                                repository.save(name.toString(), review.toString(),
+                                    null, thumbnailBytes)
+                            }else{
+                                repository.save(name.toString(), review.toString(),
+                                    file!!.toRelativeString(activity!!.filesDir), thumbnailBytes)
+                            }
                             textViewName.setText("")
                             textViewReview.setText("")
                             startActivity(Intent(activity!!, ListActivity::class.java))
                         }else{
-                            repository.update(reviewToEdit.id, name.toString(), review.toString())
+                            if(file == null){
+                                repository.update(reviewToEdit.id, name.toString(), review.toString(),
+                                    null, thumbnailBytes)
+                            }else{
+                                repository.update(reviewToEdit.id, name.toString(), review.toString(),
+                                    file!!.toRelativeString(activity!!.filesDir), thumbnailBytes)
+                            }
                             activity!!.finish()
                         }
                     }
