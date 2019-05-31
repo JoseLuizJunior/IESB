@@ -3,6 +3,8 @@ package com.androiddesenv.opiniaodetudo.infra.dao
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
+import androidx.room.migration.Migration
+import androidx.sqlite.db.SupportSQLiteDatabase
 
 class ReviewDBHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null, DATABSE_VERSION) {
 
@@ -24,5 +26,6 @@ class ReviewDBHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
         onCreate(db)
     }
+
 }
 

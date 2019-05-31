@@ -16,8 +16,8 @@ class ReviewRepository{
         reviewDAO = reviewDatabase.reviewDao()
     }
 
-    fun save(name: String, review: String){
-        reviewDAO.save(Review(UUID.randomUUID().toString(), name, review))
+    fun save(name: String, review: String, photoPath: String?, thumbnailBytes: ByteArray?) {
+        reviewDAO.save(Review(UUID.randomUUID().toString(), name, review, photoPath, thumbnailBytes))
     }
 
     fun listAll(): List<Review> {
