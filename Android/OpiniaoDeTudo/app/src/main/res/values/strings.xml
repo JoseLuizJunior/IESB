@@ -11,4 +11,7 @@
     <string name="new_item">Novo Item</string>
     <string name="list_item">Listar Itens</string>
     <string name="photo">Foto</string>
+    <string name="night_mode">Modo Noturno</string>
+    <string name="summary_night_mode">No modo noturno as cores do aplicativo ficam escuras</string>
+    <string name="settings">Configurações</string>
 </resources>
