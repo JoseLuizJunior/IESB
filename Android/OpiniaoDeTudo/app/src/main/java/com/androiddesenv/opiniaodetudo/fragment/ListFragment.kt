@@ -1,12 +1,14 @@
 package com.androiddesenv.opiniaodetudo.fragment
 
 import android.content.Intent
+import android.graphics.BitmapFactory
 import android.os.AsyncTask
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import android.widget.ImageView
 import android.widget.ListView
 import android.widget.TextView
 import androidx.appcompat.widget.PopupMenu
@@ -54,6 +56,11 @@ class ListFragment : Fragment() {
                     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
                         val itemView = layoutInflater.inflate(R.layout.review_list_item_layout, null)
                         val item = reviews[position]
+                        if(item.thumbnail != null){
+                            val thumbnail = itemView.findViewById<ImageView>(R.id.thumbnail)
+                            val bitmap = BitmapFactory.decodeByteArray(item.thumbnail, 0, item.thumbnail.size)
+                            thumbnail.setImageBitmap(bitmap)
+                        }
 
                         val textViewName = itemView.findViewById<TextView>(R.id.item_name)
                         val textViewReview = itemView.findViewById<TextView>(R.id.item_review)

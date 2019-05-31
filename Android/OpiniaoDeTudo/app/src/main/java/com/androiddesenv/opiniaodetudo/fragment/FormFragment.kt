@@ -39,11 +39,18 @@ class FormFragment : Fragment() {
         val buttonSave = mainView.findViewById<Button>(R.id.button_save)
         val textViewName = mainView.findViewById<TextView>(R.id.input_nome)
         val textViewReview = mainView.findViewById<TextView>(R.id.input_review)
+        val imageViewPhoto = mainView.findViewById<ImageView>(R.id.thumbnail)
+
 
 
         val reviewToEdit = (activity!!.intent?.getSerializableExtra("item") as Review?)?.also { review ->
             textViewName.text = review.name
             textViewReview.text = review.review
+            if(review.thumbnail != null){
+                val bitmap = BitmapFactory.decodeByteArray(review.thumbnail, 0, review.thumbnail.size)
+                imageViewPhoto.setImageBitmap(bitmap)
+            }
+
         }
 
         configurePhotoClick()

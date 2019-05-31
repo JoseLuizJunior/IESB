@@ -64,12 +64,15 @@
             android:text="@string/photo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/photo" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="16dp" android:layout_marginBottom="16dp"/>
+            app:layout_constraintBottom_toTopOf="@+id/photo"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"/>
     <ImageView
             android:id="@+id/photo"
             android:layout_width="150dp"
-            android:layout_height="150dp" app:srcCompat="@android:drawable/ic_menu_camera"
+            android:layout_height="150dp"
+            app:srcCompat="@android:drawable/ic_menu_camera"
             android:layout_marginBottom="16dp"
             app:layout_constraintBottom_toTopOf="@+id/button_save" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
