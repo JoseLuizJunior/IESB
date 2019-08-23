@@ -6,6 +6,19 @@
     <string name="hint_name">Nome do produto/filme/coisa</string>
     <string name="hint_opiniao">Escreva aqui a sua opinião</string>
     <string name="menu_list_reviews_label">Lista Reviews</string>
-    <string name="item_list_edit">Editar</string>
-    <string name="item_list_delete">Editar</string>
+    <string name="item_list_edit">Modificar</string>
+    <string name="item_list_delete">Apagar</string>
+    <string name="new_item">Novo Item</string>
+    <string name="list_item">Listar Itens</string>
+    <string name="photo">Foto</string>
+    <string name="night_mode">Modo Noturno</string>
+    <string name="summary_night_mode">No modo noturno as cores do aplicativo ficam escuras</string>
+    <string name="settings">Configurações</string>
+    <string name="about">Sobre</string>
+    <string name="summary_about">Informações do autor</string>
+    <string name="label_autor">Autor:</string>
+    <string name="name_autor">José Luiz Rodrigues Corrêa Júnior</string>
+    <string name="label_matricula_autor">Matrícula:</string>
+    <string name="matricula_autor">1731088062</string>
+
 </resources>

@@ -1,6 +1,7 @@
 package com.androiddesenv.opiniaodetudo.model.repository
 
 import android.content.Context
+import androidx.room.Delete
 import com.androiddesenv.opiniaodetudo.infra.dao.ReviewDAO
 import com.androiddesenv.opiniaodetudo.infra.dao.ReviewDatabase
 import com.androiddesenv.opiniaodetudo.model.Review
@@ -15,26 +16,20 @@ class ReviewRepository{
         reviewDAO = reviewDatabase.reviewDao()
     }
 
-    fun save(name: String, review: String){
-        reviewDAO.save(Review(UUID.randomUUID().toString(), name, review))
+    fun save(name: String, review: String, photoPath: String?, thumbnailBytes: ByteArray?) {
+        reviewDAO.save(Review(UUID.randomUUID().toString(), name, review, photoPath, thumbnailBytes))
     }
 
     fun listAll(): List<Review> {
         return reviewDAO.listAll()
     }
-//    private constructor()
-//
-//    companion object {
-//        val instance : ReviewRepository = ReviewRepository()
-//    }
-//
-//    private val data = mutableListOf<Review>()
-//
-//    fun save(name: String, review: String){
-//        data.add(Review(UUID.randomUUID().toString(), name, review));
-//    }
-//    fun listAll() : List<Review>{
-//        return data.toList();
-//    }
 
+    @Delete
+    fun delete(item: Review) {
+        reviewDAO.delete(item)
+    }
+
+    fun update(id: String, name: String, review: String, photoPath: String?, thumbnailBytes: ByteArray?) {
+        reviewDAO.update(Review(id, name, review, photoPath, thumbnailBytes))
+    }
 }

@@ -1,63 +1,62 @@
 package com.androiddesenv.opiniaodetudo
 
-import android.content.Context
-import android.content.Intent
-import android.os.AsyncTask
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
-import android.view.inputmethod.InputMethodManager
-import android.widget.Button
-import android.widget.TextView
-import android.widget.Toast
-import androidx.constraintlayout.widget.ConstraintLayout
-import com.androiddesenv.opiniaodetudo.model.repository.ReviewRepository
+import android.preference.PreferenceManager
+import androidx.fragment.app.Fragment
+import com.androiddesenv.opiniaodetudo.fragment.FormFragment
+import com.androiddesenv.opiniaodetudo.fragment.ListFragment
+import com.androiddesenv.opiniaodetudo.fragment.SettingsFragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
 
+    private val fragments = mapOf(FORM_FRAGMENT to ::FormFragment, LIST_FRAGMENT to ::ListFragment, SETTINGS_FRAGMENT to ::SettingsFragment)
+    companion object {
+        val FORM_FRAGMENT = "formFragment"
+        val LIST_FRAGMENT = "listFragment"
+        const val SETTINGS_FRAGMENT = "settings"
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        chooseTheme()
         setContentView(R.layout.activity_main)
+        navigateTo(FORM_FRAGMENT)
+        configureBottomMenu()
+    }
 
-
-        val mainContainer = findViewById<ConstraintLayout>(R.id.main_container)
-        val buttonSave = findViewById<Button>(R.id.button_save);
-        val textViewName = findViewById<TextView>(R.id.input_nome);
-        val textViewReview = findViewById<TextView>(R.id.input_review);
-
-
-
-        mainContainer.setOnTouchListener { v, event ->
-            val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-            imm.hideSoftInputFromWindow(currentFocus!!.windowToken, 0 )
-        }
-
-        buttonSave.setOnClickListener{
-            val name = textViewName.text;
-            val review = textViewReview.text;
-
-            object : AsyncTask<Void, Void, Unit>() {
-                override fun doInBackground(vararg params: Void?) {
-                    val repository = ReviewRepository(this@MainActivity.applicationContext)
-                    repository.save(name.toString(), review.toString())
-                    startActivity(Intent(this@MainActivity, ListActivity::class.java))
-                }
-            }.execute()
+    private fun configureBottomMenu() {
+        val bottomNavigationMenu = findViewById<BottomNavigationView>(R.id.bottom_main_menu)
+        bottomNavigationMenu.setOnNavigationItemSelectedListener {
+            when (it.itemId) {
+                R.id.menuitem_newitem -> navigateTo(FORM_FRAGMENT)
+                R.id.menuitem_listitem -> navigateTo(LIST_FRAGMENT)
+                R.id.menuitem_settings -> navigateTo(SETTINGS_FRAGMENT)
+            }
+            true
         }
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.main_menu, menu)
-        return true
+    fun navigateTo(item: String) {
+        val fragmentInstance: Fragment = fragments[item]?.invoke()!!
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.fragment_container, fragmentInstance)
+            .commit()
     }
 
-    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
-        if(item?.itemId == R.id.menu_list_reviews){
-            startActivity(Intent(this, ListActivity::class.java))
-            return true
+    private fun chooseTheme() {
+        val nightMode = PreferenceManager.getDefaultSharedPreferences(this)
+            .getBoolean(SettingsFragment.NIGHT_MODE_PREF, false)
+        if(nightMode) {
+            setTheme(R.style.AppThemeNight_NoActionBar)
+        } else {
+            setTheme(R.style.AppTheme_NoActionBar)
         }
+    }
 
-        return false
+    fun setNightMode(){
+        recreate()
     }
 }

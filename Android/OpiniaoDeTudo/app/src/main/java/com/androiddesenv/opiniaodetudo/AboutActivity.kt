@@ -5,16 +5,11 @@ import androidx.appcompat.app.AppCompatActivity
 import com.androiddesenv.opiniaodetudo.fragment.ListFragment
 
 
-class ListActivity : AppCompatActivity() {
+class AboutActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.list_review_activity)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportFragmentManager
-            .beginTransaction()
-            .replace(R.id.fragment_container, ListFragment())
-            .commit()
+        setContentView(R.layout.about_activity)
     }
 
 
