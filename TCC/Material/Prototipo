@@ -1,0 +1,32 @@
+4 Documentação do protótipo:
+
+    4.1 Funcionalidades do app:
+
+    
+4.2 Funcionalidades do servidor:
+
+Login. 
+	Identificar qual usuário está utilizando o aplicativo, por meio de autenticação da Google ou Apple.
+
+
+Cadastrar Carro. 
+	É preciso verificar se aquele carro já está cadastrado no aplicativo usando o dado referente a placa do veículo. É obrigatório um carro ter uma placa, ano, modelo. 
+
+
+Manutenção. 
+	É obrigatório informar o tipo de serviço feito no carro, data, hora, km do carro, peças. Não é permitido incluir uma manutenção com quilometragem menor que a atual. Não é permitido alterar uma manutenção já cadastrada. Futuro não é permitido incluir uma peça que não faz parte do tipo de serviço.
+
+
+Avaliar peças. 
+	A avaliação poderá ser feita por meio de filtros, sendo possível selecionar por peça ou por categoria de cada sistema do veículo. Avaliar conforme a última manutenção cadastrada para o carro, informar qual a próxima quilometragem a fabricante recomenda trocar aquela peça. Se não existir manutenção anterior cadastrada para o veículo, a avaliação deve usar a km atual do veículo como base para o cálculo de qual a próxima quilometragem dever ser trocada a peça de acordo com o fabricante.
+	
+
+Configurações.
+	Usuário deve ser informado por meio de notificação no horário conforme configurado o aplicativo. Deve ser guardado essa informação para o caso de o usuario fazer login em outro aplicativo.
+	É obrigatório ter uma funcionalidade pra o usuário sair.
+
+Funcionalidade de configurações, permite agendar avisos de notificações do tipo lembrar de atualizar qual a quilometragem atual do carro, avisos sobre vida útil de peças, alteração de dados da conta.
+
+O que é possivel configurar?
+	Enviar notificação para troca de peças?
+	Logoff
